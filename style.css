@@ -1,14 +1,16 @@
 
 p {
     font-size: 16px;
-    color: #0c1adb;
+    color: #0f37eb;
     font-size : 18px;
+    font-family: "Lucida Console", "Courier New", monospace;
     text-align: center;
 }
 
 h1 {
-    color: #ff5733;
-    font-family: "Comic Sans MS", "Comic Sans", cursive, Arial, Helvetica, sans-serif;
+    color: #07a8da;
+    font-size: 50px;
+    font-family: "Lucida Console", "Courier New", monospace;
     text-align: center;
     font-weight: bold;  
     text-transform: capitalize;
@@ -18,29 +20,60 @@ h1 {
 }
 
 h2 {
-    color: #28a745;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #1c9931;
+    font-size: 30px;
+    text-shadow: -1px 0 rgb(4, 40, 197), 0 1px rgb(42, 10, 223), 1px 0 rgb(43, 8, 240), 0 -1px rgb(15, 37, 228);
+    font-family: "Lucida Console", "Courier New", monospace;
     text-align: center;
 }
 
 ul {
-    list-style-type: square;
+    list-style-type: none;
+    font-size: 20px;
     list-style-position: outside;
     padding: 0;
     color: #9c127e;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: -0.5px 0 rgb(4, 40, 197), 0 0.5px rgb(42, 10, 223), 0.5px 0 rgb(43, 8, 240), 0 0.5px rgb(15, 37, 228);
 }
 
 h3 {
     color: #ff8c00;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Lucida Console", "Courier New", monospace;
     text-align: center;
+    font-size: 20px;
+}
+
+h4 {
+
+    padding: 20px;
+    margin: 20px auto;
+    color: #001e42;
+    text-shadow: -0.5px 0 rgb(4, 158, 197), 0 0.5px rgb(10, 191, 223), 0.5px 0 rgb(8, 186, 240), 0 0.5px rgb(15, 161, 228);
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-align: center;
+    font-size: 20px;+
+}
+
+h5 {
+    background-color: #e4c1f9 ;
+    border: 2px solid #0fa0da;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    text-shadow: -2px 0 rgb(4, 40, 197), 0 2px rgb(42, 10, 223), 2px 0 rgb(43, 8, 240), 0 -2px rgb(15, 37, 228);
+
+    color: #9e5a9e;
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-align: center;
+    font-size: 30px;
 }
 
 a {
-    color: #ff0000;
+    color: #ff99c8;
     text-decoration: none;
     font-size: 20px;
+    text-shadow: -0.5px 0 rgb(4, 40, 197), 0 0.5px rgb(42, 10, 223), 0.5px 0 rgb(43, 8, 240), 0 0.5px rgb(15, 37, 228);
 }
 
 .myDiv {
@@ -59,11 +92,12 @@ blockquote {
 }
 
 body {
-    background-color: #87dad3;
+    background-color: #a9def9;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 20px;
 }
+
 
 img {
     display: block;
@@ -82,4 +116,19 @@ img {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.about-me {
+    background-color: #ff99c8;
+    border: 2px solid #0fa0da;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 100%;
+}
 
+.outliner {
+    background-color: #e4c1f9 ;
+    border: 2px solid #0fa0da;
+    padding: 20px;
+    margin: 20px auto;
+    color: #9e5a9e;
+
+}
