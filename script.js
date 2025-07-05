@@ -8,11 +8,12 @@
         });
 
         let mbtn = document.getElementById("moreuselessbutton");
+        let moremessage = document.getElementById("moremessage");
         mbtn.addEventListener("click", function() {
-            message.textContent = "I hope you have a good day!";
-            message.style.color = "#ffc8dd";
-            message.style.fontSize = "20px";
-            message.style.fontWeight = "bold";
+            moremessage.textContent = "I hope you have a good day!";
+            moremessage.style.color = "#ffc8dd";
+            moremessage.style.fontSize = "20px";
+            moremessage.style.fontWeight = "bold";
         });
 
         let morebutton = document.getElementById("morebutton");
@@ -29,12 +30,28 @@
         });
 
         window.onscroll = () => {
-            if((window.innerHeight + pageYOffset) >= document.body.offsetHeight) {
+            if (document.body.classList.contains("dark")) {
+                document.body.style.backgroundColor = "#121212";
+            }
+            else if((window.innerHeight + pageYOffset) >= document.body.offsetHeight) {
                 backgroundColor = "#94FBAB";
                 document.body.style.backgroundColor = backgroundColor;
             }
-            else if (window.pageYOffset === 0) {
+            else if (scrollY === 0) {
         document.body.style.backgroundColor = "#a9def9";
-    }
+
+            }
+
         }
 
+        let toggle = document.getElementById("toggleTheme");
+        toggle.addEventListener("click", function() {
+            document.body.classList.toggle("dark");
+            if (document.body.classList.contains("dark")) {
+                toggle.textContent = "Light Mode";
+                document.body.style.backgroundColor = "#121212";
+            } else {
+                toggle.textContent = "Dark Mode";
+                document.body.style.backgroundColor = "#a9def9";
+            }
+        });
