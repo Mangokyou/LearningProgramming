@@ -11,6 +11,9 @@ h1 {
     font-family: "Comic Sans MS", "Comic Sans", cursive, Arial, Helvetica, sans-serif;
     text-align: center;
     font-weight: bold;  
+    text-transform: capitalize;
+    text-shadow: -2px 0 rgb(4, 40, 197), 0 2px rgb(42, 10, 223), 2px 0 rgb(43, 8, 240), 0 -2px rgb(15, 37, 228);
+    
 
 }
 
@@ -35,7 +38,7 @@ h3 {
 }
 
 a {
-    color: #e40d0d;
+    color: #ff0000;
     text-decoration: none;
     font-size: 20px;
 }
@@ -43,6 +46,9 @@ a {
 .myDiv {
     text-align: center;
 }
+
+
+
 
 blockquote {
     font-style: italic;
@@ -58,3 +64,22 @@ body {
     margin: 0;
     padding: 20px;
 }
+
+img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 2px solid #0fa0da;
+}
+
+.fancy-card {
+    background-color: rebeccapurple;
+    border: 2px solid #0fa0da;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
