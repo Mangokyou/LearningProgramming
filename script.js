@@ -48,10 +48,10 @@
         toggle.addEventListener("click", function() {
             document.body.classList.toggle("dark");
             if (document.body.classList.contains("dark")) {
-                toggle.textContent = "Light Mode";
+                toggle.textContent = "Light Mode ☀️";
                 document.body.style.backgroundColor = "#121212";
             } else {
-                toggle.textContent = "Dark Mode";
+                toggle.textContent = "Dark Mode 🌙";
                 document.body.style.backgroundColor = "#a9def9";
             }
         });
