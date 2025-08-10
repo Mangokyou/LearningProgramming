@@ -1,0 +1,142 @@
+/* Standart variables so I dont have to repeat myself */
+:root {
+    --background-color: #d8e2dc;
+    --line-color: #6d6875;
+    --text-color: #000;
+    --button-color: #9d8189;
+    --button-hover-color: #b5838d;
+    --divider-color: #9d8189;
+    --cell-color: #ffcad4;
+    --cell-active-color: #f4acb7;
+    --grid-bg-color: #ffe5d9;
+    --label-color: #b8c0ff;
+}   
+
+/* General styles */
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+
+/* Full height and width for the body */
+html, body {
+    height: 100%;
+    font-family: sans-serif
+}
+
+/* Body styles */
+body {
+    background-color: var(--background-color);
+    color : var(--text-color)
+}
+
+#app {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 12px;
+}
+
+.app-header {
+    margin-bottom: 12px;
+}
+
+
+h1 {
+    text-align: center;
+    margin: 20px auto;
+}
+
+/* Button styley */
+.control-button {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: var(--button-color);
+    border-radius: 16px;
+    border: none;
+}
+
+.btn:hover {
+    background-color: var(--button-hover-color);
+}
+
+.btn:disabled {
+    opacity: 50;
+    cursor: not-allowed;
+}
+
+/* Slider styles */
+.control-slider {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+/* Wave input styles */
+
+.control-wave {
+    display: flex;
+    justify-content: center;
+}
+
+
+label {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.divider {
+    border:none;
+    border-top: 4px solid var(--divider-color);
+    margin: 20px 0;
+}
+
+/* Grid Container */
+.grid {
+  border: 1px solid var(--line-color);
+  border-radius: 8px;
+  padding: 10px;
+  background-color: var(--grid-bg-color);
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 6px;
+}
+
+.labels-left-side {
+  display: flex;
+  flex-direction: column;
+}
+
+.ruler-spacer {
+  height: 22px;
+  margin: 0;
+
+}
+
+.row-labels {
+  display: grid;
+  grid-template-rows: repeat(8, 32px);
+  gap: 4px;;
+}
+
+.row-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color);
+  background-color: var(--button-color);
+  font-size: 12px;
+  border: 1px solid var(--line-color);
+  border-radius: 4px;
+}
