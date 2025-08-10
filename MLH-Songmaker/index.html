@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Songmaker</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <main id="app">
+            <header class="app-header">
+                <h1>🎵 Song Maker 🎵</h1>
+            </header>
+            <!-- Main Buttons -->
+            <section class="controls" aria-label="Controls">
+                <div class="control-button">
+                    <button class="btn" id="play">Play</button>
+                    <button class="btn" id="stop">Stop</button>
+                    <button class="btn" id="clear">Clear</button>
+                    <button class="btn" id="random">Random</button>
+                </div>
+            <!-- Bpm Slider -->   
+                <div class="control-slider">
+                    <label for="bpm">BPM: </label>
+                    <input type="range" id="bpm" min="60" max="240" value="120">
+                    <span id="bpm-value">120</span>
+                </div>
+            <!-- Wave selector -->
+                <div class="control-wave">
+                    <label for ="waveSelect">Sound</label>
+                    <select id="waveSelect" name ="waveSelect">
+                        <option value="sine">Sine</option>
+                        <option value="square">Square</option>
+                        <option value="triangle">Triangle</option>
+                        <option value="sawtooth">Sawtooth</option>
+                    </select>
+                </div>
+            </section>  
+
+            <hr class="divider">
+
+            <section id="grid" class="grid" role="grid" aria-label="Notes grid"></section>
+        </main>
+
+
+        <noscript>Please enable JavaScript to use this application.</noscript>
+        <script src="main.js"></script>
+    </body>
+</html>
