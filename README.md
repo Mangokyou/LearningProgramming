@@ -1,5 +1,4 @@
-# LearningWebDevelopment
-Repo where I put in stuff while learning Web Developing
+# LearningProgramming
+Repo where I put in stuff I made while learning programming
 
-To see the current webpage 
-use : https://mangokyou.github.io/LearningWebDevelopment-With-MLH/
+Folders with MLH are Projects I made during MajorLeagueHacking Hackathons (https://mlh.io/)
