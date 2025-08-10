@@ -85,6 +85,7 @@ h1 {
 .control-wave {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 
@@ -97,6 +98,15 @@ label {
     border:none;
     border-top: 4px solid var(--divider-color);
     margin: 20px 0;
+}
+
+select {
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid var(--line-color);
+    background-color: var(--button-color);
+    color: var(--text-color);
 }
 
 /* Grid Container */
@@ -135,8 +145,32 @@ label {
   align-items: center;
   justify-content: center;
   color: var(--text-color);
-  background-color: var(--button-color);
+  background-color: #c8b6ff;
   font-size: 12px;
   border: 1px solid var(--line-color);
   border-radius: 4px;
 }
+
+.ruler {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    gap: 4px;
+    margin: 0;
+}
+
+.ruler-cell {
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    background-color: #c8b6ff;
+    font-size: 12px;
+    border: 1px solid var(--line-color);
+    border-radius: 4px;
+}
+
+.beat {
+    background-color: #ffd6ff;
+}
+
