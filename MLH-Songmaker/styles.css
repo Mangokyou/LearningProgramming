@@ -7,7 +7,7 @@
     --button-hover-color: #b5838d;
     --divider-color: #9d8189;
     --cell-color: #ffcad4;
-    --cell-active-color: #f4acb7;
+    --cell-active-color: #ff99c8;
     --grid-bg-color: #ffe5d9;
     --label-color: #b8c0ff;
 }   
@@ -129,7 +129,7 @@ select {
 }
 
 .ruler-spacer {
-  height: 22px;
+  height: 26px;
   margin: 0;
 
 }
@@ -151,6 +151,7 @@ select {
   border-radius: 4px;
 }
 
+/* Right Side of the grid */
 .ruler {
     display: grid;
     grid-template-columns: repeat(16, 1fr);
@@ -168,9 +169,33 @@ select {
     font-size: 12px;
     border: 1px solid var(--line-color);
     border-radius: 4px;
+    margin-bottom: 4px;
 }
 
 .beat {
     background-color: #ffd6ff;
 }
 
+/* Bottom grid */
+
+.grid-inner {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-auto-rows: 32px;
+    gap: 4px;
+}
+
+.cell {
+    border: 1px solid var(--line-color);
+    border-radius: 4px;
+    background-color: var(--cell-color);
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: var(--cell-active-color);
+}
+
+.cell.active {
+    background-color: var(--cell-active-color);
+}
